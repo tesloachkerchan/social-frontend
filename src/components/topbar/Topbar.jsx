@@ -11,7 +11,7 @@ export default function Topbar() {
       </div>
       <div className="topbarCenter">
         <div className="searchBar">
-          <SearchIcon />
+          <SearchIcon className='searchIcon'/>
           <input placeholder='search for posts or friends' className="searchInput" />
         </div>
       </div>
@@ -34,6 +34,7 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
+        <img src="/assets/persons/tesloach.jpg" alt="" className="topbarImg" />
       </div>
     </div>
   )
