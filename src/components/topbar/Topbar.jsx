@@ -7,7 +7,7 @@ export default function Topbar() {
   return (
     <div className='topbarContainer'>
       <div className="topbarLeft">
-        <span className='logo'>TesSocial</span>
+        <span className='logo'>KerSocial</span>
       </div>
       <div className="topbarCenter">
         <div className="searchBar">
@@ -23,15 +23,15 @@ export default function Topbar() {
         <div className="topbarIcons">
           <div className="topbarIconItem">
             <PersonIcon />
-            <span className="topbarIconBadge">1</span>
+            <span className="topbarIconBadge">10</span>
           </div>
           <div className="topbarIconItem">
             <ChatIcon />
-            <span className="topbarIconBadge">1</span>
+            <span className="topbarIconBadge">2</span>
           </div>
           <div className="topbarIconItem">
             <NotificationsIcon />
-            <span className="topbarIconBadge">1</span>
+            <span className="topbarIconBadge">14</span>
           </div>
         </div>
         <img src="/assets/persons/tesloach.jpg" alt="" className="topbarImg" />
