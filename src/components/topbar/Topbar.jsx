@@ -3,11 +3,18 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import {AuthContext} from '../../context/AuthContext'
 export default function Topbar() {
+  const { user } = useContext(AuthContext)
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className='topbarContainer'>
       <div className="topbarLeft">
-        <span className='logo'>KerSocial</span>
+        <Link to='/' style={{textDecoration:'none'}}>
+          <span className='logo'>KerSocial</span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchBar">
@@ -23,7 +30,7 @@ export default function Topbar() {
         <div className="topbarIcons">
           <div className="topbarIconItem">
             <PersonIcon />
-            <span className="topbarIconBadge">10</span>
+            <span className="topbarIconBadge">9+</span>
           </div>
           <div className="topbarIconItem">
             <ChatIcon />
@@ -31,10 +38,12 @@ export default function Topbar() {
           </div>
           <div className="topbarIconItem">
             <NotificationsIcon />
-            <span className="topbarIconBadge">14</span>
+            <span className="topbarIconBadge">9+</span>
           </div>
         </div>
-        <img src="/assets/persons/tesloach.jpg" alt="" className="topbarImg" />
+        <Link to={`/profile/${user.userName}`}>
+           <img src={user.profilePicture? PF + user.profilePicture:  PF + "persons/noAvatar.png"} alt="" className="topbarImg" />
+        </Link>
       </div>
     </div>
   )
