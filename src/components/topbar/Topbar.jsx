@@ -32,10 +32,12 @@ export default function Topbar() {
             <PersonIcon />
             <span className="topbarIconBadge">9+</span>
           </div>
-          <div className="topbarIconItem">
+          <Link to='/messager'>
+            <div className="topbarIconItem">
             <ChatIcon />
             <span className="topbarIconBadge">2</span>
           </div>
+          </Link>
           <div className="topbarIconItem">
             <NotificationsIcon />
             <span className="topbarIconBadge">9+</span>
