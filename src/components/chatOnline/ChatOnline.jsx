@@ -23,7 +23,7 @@ export default function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
   const handleClick = async (user) => {
     try {
       const res = await axios.get(
-        `http://localhost:8800/api/conversations/find/${currentId}/${user._id}`
+        `/api/conversations/find/${currentId}/${user._id}`
       );
       setCurrentChat(res.data);
     } catch (err) {

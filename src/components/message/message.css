@@ -16,7 +16,7 @@
   margin-right: 10px;
 }
 
-.messageText{
+.message.own .messageText{
     padding: 10px;
     border-radius: 20px;
     background-color: #1877f2;
@@ -33,7 +33,9 @@
     align-items: flex-end;
 }
 
-.message.own .messageText{
+.messageText{
     background-color: rgb(245, 241, 241);
+    border-radius: 20px;
+    padding: 10px;
     color: black;
 }
