@@ -68,7 +68,7 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #1775ee;
+    background-color:black /*#1775ee*/;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -77,7 +77,7 @@
 
 .loginForgot{
     text-align: center;
-    color: #1775ee;
+    color:black /*#1775ee*/;
 }
 
 .loginRegisterButton{

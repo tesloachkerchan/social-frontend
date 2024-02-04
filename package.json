@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8800"
+  "proxy": "https://socialnode-lep3.onrender.com"
 }
